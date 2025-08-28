@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLA Mock 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #006daa;
+            color: white;
+            padding : 5px 0;
+        }
+        .header-content {
+             display: flex;
+  justify-content: space-between; /* pushes content to opposite sides */
+  align-items: center;           /* vertical centering */
+  padding: 10px;
+        }
+        .header-content a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-content a:hover {
+            color: yellow; }
+        .header-content h1 {
+            margin: 0;
+        }
+        .timer {
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .timer img {
+            margin-right: 5px;
+        }
+        main {
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+            
+        }
+        .instructions {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .instructions ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #006daa;
+            color: white;
+            text-align: right;
+            
+        }
+        footer .next-button {
+            background-color: #0066cc;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        nav{
+            height: 30px;
+            background-color: #80aee1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+  <header>
+  <div class="header-content">
+    <h5>GED Testing Service</h5>
+    <a href="">Time Remaining 02:17:00</a>
+  </div>
+</header>
+
+    <nav>
+
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <img src="ged.jpeg" alt="">
+        <h5 style="font-weight: bold;">Reasoning Through Language Arts Mock 1</h5>
+<div style="text-align: left;">
+        <p>Welcome, <strong>Radib</strong></p>
+        <p>Here is some information that you need to know before you start this test:</p>
+        
+</div>
+        <div class="instructions">
+            <ul>
+                <li>You should not spend too much time on a question if you are not certain of the answer.</li>
+                <li>If you are not certain of the answer to a question, you can mark your answer using the “Flag for Review”.</li>
+                <li>Some questions are based on materials presented on the left side of a split screen.</li>
+                <li>You have <strong>137 Minutes</strong> to complete this test.</li>
+            </ul>
+        </div>
+        
+        <p>Click the <strong>Next</strong> button in the lower right corner to begin.</p>
+    </main>
+
+    <!-- Footer with Next Button -->
+    <footer>
+        <button class="next-button" onclick="location.href='exam.html'">Next ➔</button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Timer functionality
+        let totalSeconds = 6900; // 115 minutes in seconds
+
+        function updateTimer() {
+            const hours = Math.floor(totalSeconds / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            // Format time as HH:MM:SS
+            const formattedTime = `
+                ${String(hours).padStart(2, '0')}:
+                ${String(minutes).padStart(2, '0')}:
+                ${String(seconds).padStart(2, '0')}
+            `.replace(/\s+/g, ''); // Remove extra spaces
+
+            document.getElementById('time-remaining').innerText = `Time remaining: ${formattedTime}`;
+
+            if (totalSeconds > 0) {
+                totalSeconds--;
+            } else {
+                clearInterval(timerInterval);
+                alert("Time's up!");
+            }
+        }
+
+        const timerInterval = setInterval(updateTimer, 1000); // Update timer every second
+    </script>
+</body>
+</html>
