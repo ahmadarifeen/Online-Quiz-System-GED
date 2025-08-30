@@ -1,3 +1,21 @@
+function prettyAnswer(ans) {
+    if (!ans) return "No answer";
+
+    // For drag-drop style answers: { zoneName: [ids...] }
+    if (typeof ans === "object" && !Array.isArray(ans)) {
+        return Object.entries(ans)
+            .map(([zone, vals]) => `<b>${zone}</b>: ${Array.isArray(vals) ? vals.join(", ") : vals}`)
+            .join("<br>");
+    }
+
+    // For arrays like ["1","5"]
+    if (Array.isArray(ans)) {
+        return ans.join(", ");
+    }
+
+    return ans.toString();
+}
+
 // Define the passage once
 const section1Passage = `
 <h5 style="font-weight: bold;">Guest Column: Fight Fire with Fire</h5>
@@ -164,10 +182,69 @@ const questions = [
     // Section 1
     {
         passage: section1Passage,
-        type: "mcq",
-        question: "Which quotation supports patience? (Q1)",
-        options: ["A. 3", "B. 4", "C. 5", "D. 22"],
-        answer: "B",
+        type: "drag-drop",
+        question: "What evidence does Lehnar use to support her claims? Drag and drop for pieces of evidences into the chart ",
+        options: [
+            { id: "1", text: "More Homes are being built near wilderness areas" },
+            { id: "2", text: "Prescribed Burns can limit wildfire spread." },
+            { id: "3", text: "Small fires than populations of insects" },
+            { id: "4", text: "Some plants develop by means of lightning strikes" },
+            { id: "5", text: "Land Managers need certain tools for their jobs." },
+
+        ],
+        correctPlacement: {
+            "The burden on firefighting is increasing": [
+                "5", // Land Managers need certain tools for their jobs.
+                "1"  // More Homes are being built near wilderness areas
+            ],
+            "Wildfires can be beneficial": [
+                "3", // Small fires than populations of insects
+                "4"  // Some plants develop by means of lightning strikes
+            ]
+        },
+        section: 1
+    },
+    {
+        passage: section1Passage2,
+        type: "drag-drop",
+        question: "Drag and drop two statments that expresses Atel's purposes for writing his article into the empty boxes",
+        options: [
+            { id: "1", text: "to argue that the address is of interest to the American public" },
+            { id: "2", text: "to compare the effectiveness of sharing the address through different media" },
+            { id: "3", text: "to persuade readers to research politics via new information sources" },
+            { id: "4", text: "to emphasize the benefits of real-time news over day-old news" },
+            { id: "5", text: "to analyze the findings of a report about people viewing the address on television" },
+
+        ],
+        correctPlacement: {
+            "Atel's Purpose": [
+                "5", // 
+                "1"  // 
+            ],
+
+        },
+        section: 1
+    },
+    {
+        passage: section2Passage,
+        type: "drag-drop",
+        question: "Drag and drop the events into the empty boxes to show the Order in which they occur in the excerpt",
+        options: [
+            { id: "1", text: "The duck fusses at the food in the water. " },
+            { id: "2", text: "The duck comes out of the doghouse." },
+            { id: "3", text: "The duck walks with the narrator" },
+            { id: "4", text: "The narrator hears a strange sound. " },
+            { id: "5", text: "The narrator cleans out the bowl. " },
+
+        ],
+        correctPlacement: {
+            "Order of Events": [
+                "5",
+                "2",
+                "1",
+                "3",
+            ],
+        },
         section: 1
     },
     {
@@ -178,23 +255,6 @@ const questions = [
         answer: "B",
         section: 1
     },
-    {
-        passage: section1Passage,
-        type: "drag-drop",
-        question: "Drag each animal into the correct habitat:",
-        options: [
-            { id: "lion", text: "Lion" },
-            { id: "penguin", text: "Penguin" },
-            { id: "camel", text: "Camel" }
-        ],
-        correctPlacement: {
-            "Savanna": ["lion"],
-            "Antarctica": ["penguin"],
-            "Desert": ["camel"]
-        },
-        section: 1
-    },
-
 
     // Section 2
     {
@@ -320,9 +380,16 @@ function startSectionTimer() {
     }, 1000);
 }
 
+
 // Drag & Drop functions
-function allowDrop(ev) { ev.preventDefault(); }
-function drag(ev) { ev.dataTransfer.setData("text", ev.target.id); }
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
 function drop(ev) {
     ev.preventDefault();
     const data = ev.dataTransfer.getData("text");
@@ -330,7 +397,7 @@ function drop(ev) {
     ev.target.appendChild(item);
 }
 
-// Render question
+
 // Render question
 function renderQuestion(index) {
     const sectionQuestions = questions
@@ -431,12 +498,16 @@ function renderQuestion(index) {
         questionContainer.appendChild(textarea);
     }
     // === NEW: drag-drop rendering ===
+    // ...
     else if (q.type === "drag-drop") {
         const container = document.createElement("div");
         container.className = "drag-drop-container";
 
         const optionsDiv = document.createElement("div");
         optionsDiv.className = "drag-options";
+        optionsDiv.ondrop = drop;
+        optionsDiv.ondragover = allowDrop;
+
         q.options.forEach(opt => {
             const item = document.createElement("div");
             item.className = "drag-item";
@@ -451,23 +522,25 @@ function renderQuestion(index) {
         const tableDiv = document.createElement("div");
         tableDiv.className = "table-container";
 
-        tableDiv.innerHTML = `
-            <table>
-                <thead>
-                    <tr><th>Savanna</th><th>Antarctica</th><th>Desert</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="Savanna" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                        <td id="Antarctica" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                        <td id="Desert" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
-                    </tr>
-                </tbody>
-            </table>`;
+        const columnNames = Object.keys(q.correctPlacement);
+        let tableHTML = `<table><thead><tr>`;
+
+        columnNames.forEach(name => {
+            tableHTML += `<th>${name}</th>`;
+        });
+        tableHTML += `</tr></thead><tbody><tr>`;
+
+        columnNames.forEach(name => {
+            tableHTML += `<td id="${name}" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" data-target-name="${name}"></td>`;
+        });
+        tableHTML += `</tr></tbody></table>`;
+
+        tableDiv.innerHTML = tableHTML;
         container.appendChild(tableDiv);
+
+        // Make sure you append the main container to the question container
         questionContainer.appendChild(container);
     }
-
     // === Next button logic ===
     const nextBtn = document.getElementById("next-btn");
     nextBtn.textContent = index === sectionQuestions.length - 1 ? "Submit Section" : "Next";
@@ -506,12 +579,20 @@ function renderQuestion(index) {
 // Save answer
 function saveAnswer(index, sectionQuestions) {
     const q = sectionQuestions[index];
-
     if (q.type === "drag-drop") {
         const placements = {};
+        // Get all drop zones for this question
         Object.keys(q.correctPlacement).forEach(zoneId => {
             const zone = document.getElementById(zoneId);
-            placements[zoneId] = Array.from(zone.children).map(e => e.id);
+            if (zone) {
+                // Get all direct children that are drag items
+                const items = Array.from(zone.children).filter(child =>
+                    child.classList.contains('drag-item')
+                );
+                placements[zoneId] = items.map(item => item.id);
+            } else {
+                placements[zoneId] = [];
+            }
         });
         answers[q.globalIndex] = placements;
     }
@@ -550,14 +631,11 @@ function submitExam() {
     if (timerInterval) clearInterval(timerInterval);
     let totalCorrect = 0;
     const mistakes = [];
-
     // Clear previous ER answers display
     const erContainer = document.getElementById("er-answers");
     erContainer.innerHTML = "";
-
     questions.forEach((q, index) => {
         const userAnswer = answers[index];
-
         if (q.type === "mcq" || q.type === "fill" || q.type === "dropdown") {
             if (userAnswer && userAnswer.toString().trim().toLowerCase() === q.answer.toString().trim().toLowerCase()) {
                 totalCorrect++;
@@ -568,35 +646,36 @@ function submitExam() {
                     correctAnswer: q.answer
                 });
             }
-        }
-        else if (q.type === "drag-drop") {
+        } else if (q.type === "drag-drop") {
             let correct = true;
-
             if (q.correctPlacement) {
                 for (let dropZoneId in q.correctPlacement) {
-                    const expectedIds = q.correctPlacement[dropZoneId];
-                    const placedIds = userAnswer?.[dropZoneId] || [];
-                    expectedIds.forEach(id => {
-                        if (!placedIds.includes(id)) correct = false;
-                    });
+                    const expectedIds = q.correctPlacement[dropZoneId];       // e.g. ["5","1"]
+                    const placedIds = userAnswer?.[dropZoneId] || [];         // user's array from answers
+
+                    // Check lengths are same AND every expected id is present (ignore order)
+                    if (
+                        placedIds.length !== expectedIds.length ||
+                        !expectedIds.every(id => placedIds.includes(id))
+                    ) {
+                        correct = false;
+                        break;
+                    }
                 }
             }
+
             if (correct) {
                 totalCorrect++;
             } else {
+                // keep the raw object so we can display it nicely later
                 mistakes.push({
                     question: q.question,
-                    yourAnswer: JSON.stringify(userAnswer),
-                    correctAnswer: JSON.stringify(q.correctPlacement)
+                    yourAnswer: userAnswer || {},
+                    correctAnswer: q.correctPlacement
                 });
             }
         }
-        else if (q.type === "er") {
-            const erDiv = document.createElement("div");
-            erDiv.innerHTML = `<strong>Question:</strong> ${q.question}<br>
-                               <strong>Your Response:</strong> ${userAnswer || "No answer"}<hr>`;
-            erContainer.appendChild(erDiv);
-        }
+
     });
 
     // Score out of 200, minimum 100, maximum 200
@@ -640,17 +719,56 @@ function submitExam() {
 
 // Show Mistakes
 function showMistakes() {
-    const mistakesList = document.getElementById("mistakes-list");
-    mistakesList.innerHTML = "";
-    if (window.examMistakes && window.examMistakes.length > 0) {
-        window.examMistakes.forEach(m => {
-            const li = document.createElement("li");
-            li.innerHTML = `<strong>Q:</strong> ${m.question}<br><strong>Your Answer:</strong> ${m.yourAnswer}<br><strong>Correct Answer:</strong> ${m.correctAnswer}`;
-            mistakesList.appendChild(li);
-        });
-        document.getElementById("mistakes").style.display = "block";
-    } else mistakesList.innerHTML = "<li>No mistakes!</li>";
+    const detailedReport = document.getElementById("detailed-report");
+    const mistakesListReport = document.getElementById("mistakes-list-report");
+    mistakesListReport.innerHTML = ""; // clear old report
+
+    questions.forEach((q, i) => {
+        const userAnswer = answers[i] || "Not answered";
+
+        // Determine correctness consistently with submitExam
+        let isCorrect = false;
+        if (q.type === "drag-drop") {
+            const expected = q.correctPlacement || {};
+            const placed = userAnswer || {};
+            let ok = true;
+            for (let zone in expected) {
+                const exp = expected[zone];
+                const pl = placed[zone] || [];
+                // Only check that all expected IDs are present
+                if (!exp.every(id => pl.includes(id))) {
+                    ok = false;
+                    break;
+                }
+            }
+            isCorrect = ok;
+        } else if (q.type !== "er") {
+            // normalize string comparison for other question types
+            const ua = userAnswer && userAnswer.toString ? userAnswer.toString().trim().toLowerCase() : "";
+            const ca = q.answer && q.answer.toString ? q.answer.toString().trim().toLowerCase() : "";
+            isCorrect = ua !== "" && ua === ca;
+        }
+
+        const questionDiv = document.createElement("div");
+        questionDiv.classList.add("mb-3", "p-3", "border", "rounded");
+        questionDiv.innerHTML = `
+      <h5>Question ${i + 1}</h5>
+      <div class="p-2 mb-2" style="background:#f9f9f9; border-radius:6px;">
+        ${q.passage || "(No passage for this question)"}
+      </div>
+      <p><b>Question:</b> ${q.question}</p>
+      <p><b>Your Answer:</b> ${prettyAnswer(userAnswer)}</p>
+${q.type !== "er" ? `<p><b>Correct Answer:</b> ${q.type === "drag-drop" ? prettyAnswer(q.correctPlacement) : q.answer}</p>` : ""}
+      <p style="color:${isCorrect ? "green" : "red"}; font-weight:bold;">
+        ${q.type === "er" ? "Extended Response (manual grading needed)" : (isCorrect ? "✔ Correct" : "❌ Mistake")}
+      </p>
+    `;
+        mistakesListReport.appendChild(questionDiv);
+    });
+
+    detailedReport.style.display = "block";
 }
+
 
 // Initialize
 renderQuestion(currentQuestionIndex);
@@ -711,7 +829,7 @@ function saveSection3Answers() {
         answers[sel.name] = sel.value;
     });
     // Display ER answers
-    const erContainer = document.getElementById("er-answers");
+    const erContainer = document.getElementById("er-answers").style.display = "none";
     erContainer.innerHTML = ""; // clear previous content
     questions.forEach((q, index) => {
         if (q.type === "er") {
@@ -743,3 +861,81 @@ function handleDrop(e, zoneId, questionIndex) {
     }
 }
 
+// Separate function to render ER answers
+function showERAnswers() {
+    const erContainer = document.getElementById("er-answers");
+    erContainer.innerHTML = ""; // clear previous content
+    questions.forEach((q, index) => {
+        if (q.type === "er") {
+            const userAnswer = answers[index] || "No answer";
+            const erDiv = document.createElement("div");
+            erDiv.innerHTML = `<strong>Question:</strong> ${q.question}<br>
+                               <strong>Your Response:</strong> ${userAnswer}<hr>`;
+            erContainer.appendChild(erDiv);
+        }
+    });
+}
+function showDetailReport() {
+    const detailedReport = document.getElementById("detailed-report");
+    const mistakesListReport = document.getElementById("mistakes-list-report");
+    const erAnswersReport = document.getElementById("er-answers-report");
+
+    mistakesListReport.innerHTML = ""; // clear old report
+    erAnswersReport.innerHTML = ""; // clear old ER content
+
+    questions.forEach((q, i) => {
+        const userAnswer = answers[i] || "Not answered";
+        let isCorrect = false;
+        if (q.type === "drag-drop") {
+            const expected = q.correctPlacement || {};
+            const placed = userAnswer || {};
+            let ok = true;
+            for (let zone in expected) {
+                const exp = expected[zone];
+                const pl = placed[zone] || [];
+                // Only check that all expected IDs are present
+                if (
+                    exp.length !== pl.length ||
+                    !exp.every(id => pl.includes(id))
+                ) {
+                    ok = false;
+                    break;
+                }
+            }
+            isCorrect = ok;
+        } else if (q.type !== "er") {
+            const ua = userAnswer && userAnswer.toString ? userAnswer.toString().trim().toLowerCase() : "";
+            const ca = q.answer && q.answer.toString ? q.answer.toString().trim().toLowerCase() : "";
+            isCorrect = ua !== "" && ua === ca;
+        }
+
+        // Create wrapper
+        const questionDiv = document.createElement("div");
+        questionDiv.classList.add("mb-3", "p-3", "border", "rounded");
+
+        // Build report for this question
+        questionDiv.innerHTML = `
+            <h5>Question ${i + 1}</h5>
+            <div class="p-2 mb-2" style="background:#f9f9f9; border-radius:6px;">
+                ${q.passage || "(No passage for this question)"}
+            </div>
+            <p><b>Question:</b> ${q.question}</p>
+            <p><b>Your Answer:</b> ${prettyAnswer(userAnswer)}</p>
+${q.type !== "er" ? `<p><b>Correct Answer:</b> ${q.type === "drag-drop" ? prettyAnswer(q.correctPlacement) : q.answer}</p>` : ""}
+            <p style="color:${isCorrect ? "green" : "red"}; font-weight:bold;">
+                ${q.type === "er" ? "Extended Response (manual grading needed)"
+                : (isCorrect ? "✔ Correct" : "❌ Mistake")}
+            </p>
+        `;
+
+        if (q.type === "er") {
+            // Append ER questions separately
+            erAnswersReport.appendChild(questionDiv);
+        } else {
+            // Append MCQ / regular questions
+            mistakesListReport.appendChild(questionDiv);
+        }
+    });
+
+    detailedReport.style.display = "block";
+}

@@ -67,7 +67,8 @@
   </div>
 
   <!-- Mistakes + ER answers -->
-  <button id="show-mistakes-btn" class="btn btn-warning" style="display:none;" onclick="showMistakes()">View Detail Score Report</button>
+  <button id="show-mistakes-btn" class="btn btn-warning" style="display:none;" onclick="showDetailReport()">View Detail Score Report</button>
+  
   <div id="er-answers" style="margin-top:20px;"></div>
 </div>
 
@@ -76,6 +77,13 @@
         <h6>Mistakes</h6>
         <ul id="mistakes-list"></ul>
     </div>
+  <div id="detailed-report" style="display:none; padding:20px;">
+    <h3>Detailed Score Report</h3>
+    <div id="mistakes-list-report"></div>
+    <div id="er-answers-report"></div>
+    <button class="btn btn-secondary" onclick="document.getElementById('detailed-report').style.display='none';">Close Report</button>
+</div>
+  
 </main>
 
     <footer>

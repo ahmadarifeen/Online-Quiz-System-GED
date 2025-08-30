@@ -70,12 +70,23 @@
   }
 
   .drop-zone {
-      border: 2px dashed #888;
-      min-height: 40px;
-      padding: 5px;
-      margin-top: 5px;
-      border-radius: 4px;
-      background-color: #fdfdfd;
+      min-height: 250px;
+      height: 250px;
+      min-width: 180px;
+      border: 1px solid #000000;
+      /* solid border, not dashed */
+      border-radius: 6px;
+      background: #f8f9fa;
+      margin: 6px;
+      padding: 8px;
+      vertical-align: top;
+      transition: background 0.2s;
+      box-sizing: border-box;
+  }
+
+  .drop-zone.drag-over {
+      background: #e3f2fd;
+      border-color: #006daa;
   }
 
   table {
