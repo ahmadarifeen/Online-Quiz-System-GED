@@ -21,11 +21,11 @@ const section1Passage = `
 <h5 style="font-weight: bold;">Guest Column: Fight Fire with Fire</h5>
 By Paula Lehner, Director, Riverton Land Management Council<br><i>Riverton Daily News,</i> <br> June 4
 
-<p>Here's an alarming number: $2 billion, the amount the U.S. Forest Service spends each year on wildfire suppression...</p>
+<p>Here's an alarming number: $2 billion, the amount the U.S. Forest Service spends each year on wildfire suppression. No one is claiming that we should stop fighting these fires, but there is a scientifically proven way to limit their spread: by setting controlled, or prescribed, burns. These smaller fires, which clear accumulated dead or diseased plant life from forests and other areas, are far less hazardous than the uncontrolled wildfires that are increasing in frequency. By regularly burning up decaying vegetation, smaller fires eliminate that potential fuel for much larger fires. Less plant-matter fuel on the ground helps slow the progress of unwanted fires before they ever start.</p>
 
-<p>In addition to causing fuel buildup, wildfire suppression has other negative consequences...</p>
+<p>In addition to causing fuel buildup, wildfire suppression has other negative consequences. For example, wildfires can purge insect infestations. In nature, small fires normally thin the population of insects in an area, but in the absence of those fires there is little to stop insect populations from increasing to unnaturally high levels. Further, many plants developed their life cycles in response to periodic natural fires from lightning strikes and other sources; these plants need fire if they are to remain healthy. Burning, as opposed to wildfire suppression, also helps create ash, which returns nutrients to the soil and can help new seeds germinate.</p>
 
-<p>Certainly, there will always be fires that we have to fight...</p>
+<p>Certainly, there will always be fires that we have to fight. People and their homes have to be protected. But the fact that more and more homes are being built near wilderness areas, many right here in Riverton, means that the burden on land management agencies and their brave firefighters is increasing. We need the right tools if we are going to continue to do our jobs effectively, and those tools include prescribed burns.</p>
 
 <p>There is no way around it. We have to fight fire with fire.</p>
 
@@ -34,11 +34,11 @@ By Paula Lehner, Director, Riverton Land Management Council<br><i>Riverton Daily
 <h5 style="font-weight: bold;">Letter to the Editor: Prescribed Burns</h5>
 <i>Riverton Daily News</i>, <br> June 11
 
-<p>I found Paula Lehner's opinion piece about prescribed burns nothing less than horrifying...</p>
+<p>I found Paula Lehner's opinion piece about prescribed burns nothing less than horrifying. In her zeal, she neglected to mention even one of the many criticisms of prescribed burns. First, consider this appalling statistic: one in every 500 prescribed burns gets out of control, and while that may sound like a small fraction, just imagine if that one raging fire were the one Lehner had decided to set near your house. In 2009, a "controlled" fire set in Yosemite National Park was intended to burn 91 acres; instead it consumed 5,000 acres.</p>
 
-<p>As for her ridiculous idea that "controlled" fires are needed to rid areas of wildfire fuel...</p>
+<p>As for her ridiculous idea that "controlled" fires are needed to rid areas of wildfire fuel, doesn't she realize that fire isn't the only way to eliminate unwanted plants? Has she not heard of mechanical and chemical thinning—in simple terms, the use of power tools and herbicides?</p>
 
-<p>Finally-and this is the worst omission of all-she did not mention the costs to the surrounding area of the fires she wants to set...</p>
+<p>Finally—and this is the worst omission of all—she did not mention the costs to the surrounding area of the fires she wants to set. Riverton has, in the past year, hit all-time high air pollution levels, and smoke from Lehner's fires would only worsen those numbers. Has she bothered to research the number of allergy and asthma sufferers in our region? Does she know that, nationwide, the incidence of allergies and asthma is rising? Is she planning to personally hand out face masks to affected individuals, or does she have some exciting new smoke-containment technology at her disposal?</p>
 
 <p>Ms. Lehner should do more research before recommending a dangerous path for our community. We must fight the fire, not add fuel to it.<br><p>
 Roy Rodriguez, resident <br> Riverton
@@ -171,6 +171,35 @@ April 8
 Madison Caan, civil engineer
 <br> Baler   
     `;
+
+const section3passage2 = `<b> Direction: Read the following passage carefully and answer the questions that follow.</b> <br>
+
+<p>There was a time when Pete Sampras's tally of 14 Grand Slam singles titles — the last of which came at the U.S. Open in 2002 — seemed like the acme of sporting achievement in men's tennis. Little did anybody expect that in the next 16 years, across 64 Majors, not one or two but three players would stand shoulder to shoulder with the American great. On Sunday, Novak Djokovic became that third man, defeating Argentine Juan Martin del Potro, for his third U.S. Open title at Flushing Meadows. The 31-year-old Serb has never been considered a once-in-a-generation talent, as have Roger Federer and Rafael Nadal, the ones above him in the trophy count. But nobody represents the modern-day game as well as Djokovic. He is the ultimate practitioner of the attrition-based baseline tennis, and at his best, with his supremely efficient patrolling of the court, is near invincible. Over two weeks in New York he hit this high many times over. In fact, the 95-minute second set in the final was a microcosm of Djokovic's last two years. It was long and weary as fortunes swung back and forth. But adversity energised him, and he found a level which his opponent couldn't match. Coming after his triumphant return at Wimbledon in July, the latest success is evidence enough that technically, tactically and physically Djokovic is back to his best. </p> <br>
+
+<p> If it was about the restoration of the old order on the men's side, it was the continuation of the new in the women's section. There has been a first-time winner in four of the past six Grand Slam tournaments, and 20-year-old Naomi Osaka added to the eclectic mix by becoming the first Japanese to win a Major. In Serena Williams, the winner of 23 singles Slams, the most by any player in the Open Era, Osaka faced the ultimate challenge. It was also an inter-generational battle like none other. The 16-year age gap between Williams and Osaka was the second biggest in the Open Era for a women's final, next only to Monica Seles (17) vs. Martina Navratilova (34) at the 1991 U.S. Open. To her immense credit, Osaka wasn't awed by the stage. While growing up, she had revered Williams. After all, this is someone who chose Williams as her subject for a school essay in third grade. On Saturday she played like she knew the 36-year-old's game like the back of her hand, absorbing everything the American threw at her, and redirecting them with much more panache. The magnitude of her achievement was nearly drowned out by the chaos in the aftermath of Williams's tirade against the chair umpire. Yet, the manner in which Osaka, at an impressionable young age, closed out the match with a cold relentlessness showed she is here to stay. </p>
+
+`;
+
+const section3passage3 = `
+<b>Directions: Read the passage carefully and answer the questions given beside.</b><br>
+
+<p>Kangaroo mother care (KMC) or the intervention where babies are placed in skin-to-skin contact with their mothers and exclusively breastfed has been recommended worldwide for stable low-birthweight newborns. Stable babies are defined as babies who do not need respiratory support or intravenous fluids and can accept oral feeds. Though previous studies have shown that keeping the baby in contact with the mother improves survival in babies (less than 2 kg weight at birth) when compared to standard hospital care, global data show that barely 5% receive such care. Also, there is no much evidence on kangaroo mother care impact when initiated at homes in India.</p><br>
+
+<p>To understand this, a team of researchers carried out a study in Haryana. The results recently published in The Lancet show that kangaroo mother care improved survival by 30% and 25%, in babies till 28 days and six months of age, respectively. The paper adds that such care for all infants with low birthweight could substantially reduce neonatal and infant mortality.</p> <br>
+
+<p>About 97% of the world's low-weight babies are born in developing countries, and India accounts for about 40% of this, implying an urgent need of effective interventions. Sarmila Mazumder, lead author of the study says, "In developing countries, even today, babies are born at home or even if born in hospitals, are discharged too soon without kangaroo mother care initiation. It is imperative therefore that such care is initiated at home."</p><br>
+
+<p>For the study, over 8,000 stable low-birthweight babies weighing less than 2.25 kg, were enrolled from two districts in Haryana, during 2015-2018 and randomly assigned to intervention and control groups. Kangaroo mother care intervention was initiated at home, at an average age of 33 hours and delivered during the first month of life, through home visits. The enrolled babies were followed up at one, three and six months of age.</p><br>
+
+<p>Dr. Mazumder adds that kangaroo mother care benefits are much beyond preventing hypothermia. "The care improves exclusive breast feeding, duration of breast feeding, and also reduces infections. It also promotes growth and development of the child and increases mother child bonding, and also reduces stress in both mother and baby," she explains.</p><br>
+
+<p>When asked how long babies need to be kept in such care, Dr. Mazumder explained that in the study, mothers were advised to keep the babies as long as possible, preferably 24 hours in day and night and till 28 days of age. An average of 11 hours of skin-to-skin contact was achieved, and mothers reported giving kangaroo mother care till 27 days of baby's age. WHO recommends that it be continued till baby attains a weight of 2.5 kg or till babies wriggle out, indicating that they do not need kangaroo mother care any further.</p><br>
+
+<p>Dr. Mazumder added that an implementation research was also conducted by the same team with the Haryana Government to scale up kangaroo mother care across 16 districts of the state. The paper adds that kangaroo mother care has the to prevent thousands of neonatal deaths in our country if 90% coverage can be achieved.</p>`;
+
+
+const section3passage4 = `\<p\>For an economy that is tottering, a big bang announcement from the government can sometimes work to turn around sentiment. The unveiling by Finance Minister Nirmala Sitharaman on Tuesday of a mega push to infrastructure investment adding up to 102 lakh crore over the next five years belongs in this category. Projects in energy, roads, railways and urban infrastructure under the National Infrastructure Pipeline (NIP) have been identified by a task force. About 42% of such identified projects are already under implementation, 19% are under development and 31% are at the conceptual stage. The NIP task force appears to have gone project-by-project, assessing each for viability and relevance in consultation with the States. Considering that the NIP will be like a window to the future, a constant review becomes paramount if this is not to degenerate into a mere collation and listing of projects. A periodic review, as promised by the Finance Ministry, is necessary. The government's push on infrastructure development will not only enable ease of living — such as metro trains in cities and towns — but also create jobs and increase demand for primary commodities such as cement and steel. From this perspective, this push to invest in infrastructure is welcome.\</p\>\<br\>
+\<p\>Identifying the projects to be put on the pipeline is the easy part. Implementing and commissioning them will be the more difficult one. There are a few hurdles that the NIP task force needs to watch out for. First, the financing plan assumes that the Centre and the States will fund 39% each while the private sector will chip in with 22% of the outlay. Going by the present fiscal situation, it will be no small challenge for the Centre to raise 39 lakh crore, even if it is over the next five years. The financial position of States is even more perilous. Second, the 22 lakh crore expected from private investment also looks steep considering the lack of appetite for fresh investment by the private sector in the last few years. In fact, this factor has been a major drag on economic growth. Given the scale of investment, debt will play an important role and it remains to be seen if banks have gotten over their apprehensions on infrastructure financing as a major part of their bad loans originated there. Finally, cooperation from States becomes very important in implementing infrastructure projects. The experience on this count has not been very happy till now. While these are genuine obstacles that the task force needs to manage, these should not detract from the need for a concerted effort to invest in infrastructure. The key will be following up and reviewing the pipeline at regular intervals.\</p\>`;
 const section3Dropdowns = {
     dropdown1: ["is occuring", "has occured", "have occurred", "has been occurring"],
     dropdown2: ["its", "our", "their", "your"],
@@ -180,6 +209,14 @@ const section3Dropdowns = {
 
 const questions = [
     // Section 1
+    {
+        passage: section1Passage,
+        type: "mcq",
+        question: "What is the impact of Lehner's use of the word \"tools\" in paragraph 3?",
+        options: ["A. It minimizes the emotional reaction people often have to prescribed burns.", "B. It indicates that using prescribed burns makes firefighting similar to other trades.", "C. It emphasizes that prescribed burns should be used only under specific conditions.", "D. It suggests that prescribed burns have costs similar to other implements used by firefighters."],
+        answer: "B",
+        section: 1
+    },
     {
         passage: section1Passage,
         type: "drag-drop",
@@ -205,6 +242,71 @@ const questions = [
         section: 1
     },
     {
+        passage: section1Passage,
+        type: "mcq",
+        question: "Which detail in Rodriguez's letter supports the idea that there are disadvantages associated with controlled fires?",
+        options: ["\"\... fire isn't the only way to eliminate unwanted plants ...\"\ (paragraph 6)", "B. \"\Has she not heard of mechanical and chemical thinning—in simple terms, the use of power tools and herbicides?\"\ (paragraph 6)", "C. \"\Riverton has, in the past year, hit all-time high air pollution levels, and smoke from Lehner's fires would only worsen those numbers.\"\ (paragraph 7)", "D. \"\... nationwide, the incidence of allergies and asthma is rising ...\"\ (paragraph 7)"],
+        answer: "C",
+        section: 1
+    },
+    {
+        passage: section1Passage,
+        type: "mcq",
+        question: "How does Rodriguez build his argument that \"\Lehner should do more research\"\?",
+        options: ["A.  Rodriguez brings up several issues relevant to prescribed burns that Lehner fails to address.", "B. Rodriguez repeatedly casts doubt on Lehner's qualifications for discussing the issue of prescribed burns.", "C. Rodriguez raises numerous questions about whether Lehner's statistics about prescribed burns are accurate.", "D. Rodriguez demonstrates that Lehner is an outsider to the community that would be affected by prescribed burns."],
+        answer: "A",
+        section: 1
+    },
+    {
+        passage: section1Passage,
+        type: "mcq",
+        question: "Which idea about the effect of prescribed burns is included in Rodriguez's letter?",
+        options: ["A. They result in decreased sales of power tools and herbicides.", "B. They result in reduced enthusiasm about fighting air pollution.", "C. They cause financial hardship for organizations that fight fires.", "D. They cause respiratory problems for increasing numbers of people."],
+        answer: "D",
+        section: 1
+    },
+    {
+        passage: section1Passage,
+        type: "mcq",
+        question: "Which conclusion is supported by Rodriguez's letter?",
+        options: ["A. Prescribed burns have caused damage to residential areas.", "B. The size of prescribed burns and the smoke they create are difficult to control.", "C. Mechanical and chemical thinning are more successful than fire at eliminating unwanted plants.", "D. Inventing new smoke-containment technologies would increase the effectiveness of prescribed burns."],
+        answer: "B",
+        section: 1
+    },
+    {
+        passage: section1Passage,
+        type: "mcq",
+        question: "How are the conclusions of Lehner's column and Rodriguez's letter similar?",
+        options: ["A. Both convey the idea that firefighters should have a say in the use of prescribed burns.", "B.  Both convey the idea that prescribed burns are simply one element of wildfire prevention.", "C. Both convey the idea that the subject of prescribed burns leaves no room for compromise.", "D. Both convey the idea that the effectiveness of prescribed burns has not yet been sufficiently studied."],
+        answer: "B",
+        section: 1
+    },
+
+    {
+        passage: section1Passage2,
+        type: "mcq",
+        question: "Read this sentence from paragraph 1. <br> The Constitution does not specify when or how the president should deliver the address.<br><br> Based on Jackson's article, what can readers infer from the sentence?",
+        options: ["A. The writers of the Constitution did not view the president's address as a high priority.", "B. The Constitution does not restrict the content of the president's public communication.", "C. The Constitution does not protect the right of the president to present a political agenda.", "D. The writers of the Constitution did not dictate the methods the president must use to give the address."],
+        answer: "D",
+        section: 1
+    },
+    {
+        passage: section1Passage2,
+        type: "mcq",
+        question: "How do the data in Figure 1 extend the information in Jackson's article?",
+        options: ["A. by showing how technology has affected the address", "B. by revealing when the address saw the greatest change", "C. by illustrating how changes to the address have affected its purpose", "D. by highlighting important developments in the history of the address"],
+        answer: "A",
+        section: 1
+    },
+    {
+        passage: section1Passage2,
+        type: "mcq",
+        question: "Which conclusion is best supported by Jackson's article?",
+        options: ["A. State of the Union addresses will continue to change in the future.", "B. Future presidents will look to previous State of the Union addresses for inspiration.", "C. State of the Union addresses will be received in the future with increasing criticism.", "D. Future presidents will emphasize style over substance in their State of the Union addresses."],
+        answer: "A",
+        section: 1
+    },
+    {
         passage: section1Passage2,
         type: "drag-drop",
         question: "Drag and drop two statments that expresses Atel's purposes for writing his article into the empty boxes",
@@ -226,6 +328,65 @@ const questions = [
         section: 1
     },
     {
+        passage: section1Passage2,
+        type: "mcq",
+        question: "How are Jackson's and Atel's articles similar?",
+        options: ["A. Both articles discuss the audience's changing experience of the State of the Union address.", "B. Both articles provide insight into the founding leaders' view of the State of the Union address.", "C. Both articles consider the effects of the media's overexposure of the State of the Union address.", "D. Both articles describe the Internet's options for viewing or reading the State of the Union address."],
+        answer: "A",
+        section: 1
+    },
+    {
+        passage: section1Passage2,
+        type: "mcq",
+        question: "Read this sentence from paragraph 9.<br> Fewer Americans are watching the address via live television, but it still influences American voters and public discourse <br> Which idea mentioned in Atel's article does this sentence support?",
+        options: ["A. that coverage of the State of the Union in real time is important to the American people", "B. that the State of the Union has changed from being an update on the status of the nation", "C. that more of the American public is accessing the State of the Union through newer technology", "D. that analysts record the numbers of words in the State of the Union that are devoted to particular issues"],
+        answer: "C",
+        section: 1
+    },
+    {
+        passage: section1Passage2,
+        type: "mcq",
+        question: "Based on the information in the two articles, Jackson and Atel share which perspective?",
+        options: ["A. The State of the Union address has become an important political tool for the president.", "B. The State of the Union address influences the American public more than it influences Congress.", "C. Interest in watching a live broadcast of the State of the Union address has declined in recent years.", "D. The Internet has decreased the importance of the president delivering the State of the Union address to Congress."],
+        answer: "A",
+        section: 1
+    },
+
+    // Section 2
+    {
+        passage: erPassage,
+        type: "er", // extended response
+        question: "Write your response to the passage here:",
+        answer: "", // no predefined answer for ER
+        section: 2
+    },
+
+    // Section 3 - Normal Fill Question
+    {
+        passage: section2Passage,
+        type: "mcq",
+        question: "Why does the author describe the duck's bowl as self-cleaning?",
+        options: ["A. The duck eats all of the food every night, leaving the bowl empty.", "B. The duck food sticks to the frozen water when the bowl is emptied.", "C. The duck food scatters about the yard when the bowl is knocked over.", "D.  The duck displaces the food from the bowl when she drinks the warm water."],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section2Passage,
+        type: "mcq",
+        question: "In paragraph 5, how does the author's use of the freight train image affect the meaning of the passage?",
+        options: ["A. The train image illustrates the narrator's ability to ignore unimportant thoughts.", "B. The train image clarifies why the narrator has multiple thoughts in succession.", "C. The train image highlights the narrator's desire to spend time doing nothing.", "D. The train image emphasizes why the narrator fixates on certain sounds."],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section2Passage,
+        type: "mcq",
+        question: "Read this sentence from paragraph 5. <br> \"\A moonlit contrail,\"\ I whispered to myself, and then I came downstairs and felt for the coffeemaker. <br>What can the reader infer from this sentence ? ",
+        options: ["A. The narrator casually accepts that nature and humans interconnect.", "B. The narrator changes his behavior because of something in the sky.", "C. The narrator believes ordinary tasks intrude on the beauty of nature.", "D. The narrator recovers his composure after experiencing an unusual event."],
+        answer: "B",
+        section: 3
+    },
+    {
         passage: section2Passage,
         type: "drag-drop",
         question: "Drag and drop the events into the empty boxes to show the Order in which they occur in the excerpt",
@@ -245,45 +406,246 @@ const questions = [
                 "3",
             ],
         },
-        section: 1
+        section: 3
     },
-    {
-        passage: section1Passage2,
-        type: "mcq",
-        question: "Which quotation supports patience? (Q1)",
-        options: ["A. 3", "B. 4", "C. 5", "D. 22"],
-        answer: "B",
-        section: 1
-    },
-
-    // Section 2
-    {
-        passage: erPassage,
-        type: "er", // extended response
-        question: "Write your response to the passage here:",
-        answer: "", // no predefined answer for ER
-        section: 2
-    },
-
-    // Section 3 - Normal Fill Question
     {
         passage: section2Passage,
         type: "mcq",
-        question: "Which quotation supports patience? (Q1)",
-        options: ["A. 3", "B. 4", "C. 5", "D. 22"],
+        question: "Why is the duck important to the narrator?",
+        options: ["A. The narrator thinks the duck is symbolic of the natural world.", "B. The narrator feels responsible for the duck because it relies on him.", "C. The narrator has transferred his affection for his old dog to the duck.", "D. The narrator shows his love for his daughter through his care of the duck."],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section2Passage,
+        type: "mcq",
+        question: "Based on details in the excerpt, which inference can be made about the narrator?",
+        options: ["A. He is concerned about local politics.", "B. He resents doing chores every morning.", "C. He is contemplative and enjoys observing nature.", "D.  He keeps the rest of the world out of his personal life."],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage2,
+        type: "mcq",
+        question: "Why is Djokovic described as the ultimate practitioner of attrition-based baseline tennis?",
+        options: ["A. Because he relies only on powerful serves to win points", "B. Because he uses consistent, grinding rallies and efficient court coverage to outlast opponents", "C. Because he prefers flashy, risky strokes that amaze spectators ", "D. Because he often avoids long rallies and plays short matches"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage2,
+        type: "mcq",
+        question: "How does the author contrast men’s and women’s tennis in the passage?",
+        options: ["A. By showing how both sides were dominated by a single champion", "B. By comparing Djokovic’s comeback with Osaka’s rise as a new champion", "C. By explaining how Federer and Nadal inspired Serena Williams", "D. By stating that men’s tennis is declining while women’s tennis is growing"],
         answer: "B",
         section: 3
     },
 
+    {
+        passage: section3passage2,
+        type: "mcq",
+        question: "In what way was Osaka’s victory both historic and symbolic?",
+        options: ["A. She equaled Serena Williams’s record of 23 Slams", "B. She became the youngest champion in U.S. Open history", "C. She broke cultural barriers by being the first Japanese player to win a Grand Slam, defeating her childhood idol", "D. She retired after her victory, making it a symbolic farewell"],
+        answer: "C",
+        section: 3
+    },
+
+    {
+        passage: section3passage2,
+        type: "mcq",
+        question: "How did the inter-generational aspect add to the significance of the Williams–Osaka final?",
+        options: ["A. It highlighted the shift from an established legend to a rising star", "B. It showed how older players always dominate younger ones", "C. It proved that age differences don’t matter in tennis", "D. It suggested Serena was too old to compete again"],
+        answer: "A",
+        section: 3
+    },
+
+    {
+        passage: section3passage2,
+        type: "mcq",
+        question: "Why does the author mention Osaka’s childhood admiration for Serena Williams?",
+        options: ["A. To show how Osaka lacked confidence before the final", "B. To emphasize how remarkable it was for Osaka to beat her idol on the biggest stage", "C. To suggest that Serena coached Osaka secretly", "D. To prove that Osaka did not deserve the title on her own merit"],
+        answer: "B",
+        section: 3
+    },
+
+    {
+        passage: section3passage2,
+        type: "mcq",
+        question: "What broader theme about sports does the passage suggest?",
+        options: ["A. Success in tennis is mostly based on luck", "B. Emerging stars always replace older champions easily", "C. Resilience, preparation, and adaptability are key to long-term success", "D. Only physical strength determines success in tennis"],
+        answer: "C",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "Why is Kangaroo Mother Care (KMC) particularly emphasized for developing countries like India?",
+        options: ["A. Because it requires expensive equipment and advanced hospitals", "B. Because most low-birthweight babies are born in developed countries", "C. Because India has the largest share of low-birthweight babies and many are born at home or discharged early", "D. Because WHO has made it mandatory in all countries"],
+        answer: "C",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "What does the study in Haryana reveal about the effectiveness of KMC?",
+        options: ["A. It reduced survival by 30% in 28 days and 25% in six months", "B. It improved survival by 30% in 28 days and 25% in six months", "C. It had no significant impact on survival rates", "D. It only improved mother-child bonding but not survival"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "Based on the passage, what broader benefits of KMC beyond preventing hypothermia are emphasized?",
+        options: ["A. Reduced breastfeeding and weaker mother-child bonding", "B. Improved exclusive breastfeeding, growth, bonding, and reduced infections", "C. Faster discharge of babies from hospitals", "D. Reduced dependency on healthcare workers"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "Why did the researchers choose to initiate KMC at home in Haryana?",
+        options: ["A. Because hospitals refused to provide neonatal care", "B. Because many babies in India are either born at home or discharged too early", "C. Because home care was more expensive than hospital care", "D. Because KMC cannot be practiced in hospitals"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "What is implied by WHO’s recommendation to continue KMC till babies reach 2.5 kg or wriggle out?",
+        options: ["A. KMC is harmful after 2.5 kg weight is reached", "B. Babies naturally show readiness to stop KMC when they develop enough strength", "C. Parents often misuse KMC beyond 28 days", "D. The WHO wants all mothers to practice KMC for exactly one months"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "What does the passage imply about the scalability of KMC in India?",
+        options: ["A. It is too resource-intensive to implement widely", "B. It can prevent thousands of deaths if adopted on a large scale", "C. It has already reached 100% coverage in India", "D. It is effective only in urban hospitals, not rural homes"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage3,
+        type: "mcq",
+        question: "What can be inferred about the cultural and systemic challenges in implementing KMC?",
+        options: ["A. Mothers may not be willing to spend long hours in skin-to-skin contact", "B. Babies resist KMC and prefer incubators", "C. Hospitals provide free incubators, so mothers reject KMC", "D. WHO discourages at-home KMC in developing countries"],
+        answer: "A",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "Why does the passage describe the government’s infrastructure announcement as a “big bang” move?",
+        options: ["A. Because it focuses only on metro trainst", "B. Because it can immediately improve investor and public sentiment in a struggling economy", "C. Because it guarantees private investment without challenges", "D. Because it is primarily aimed at rural areas"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "What is the significance of the National Infrastructure Pipeline (NIP) according to the passage?",
+        options: ["A. It lists projects without assessing feasibility", "B. It serves as a window to the future, requiring constant review and planning", "C. It only benefits urban areas without generating employment", "D. It ensures complete private sector funding for infrastructure"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "Why does the passage describe the government’s infrastructure announcement as a “big bang” move?",
+        options: ["A. Because it focuses only on metro trainst", "B. Because it can immediately improve investor and public sentiment in a struggling economy", "C. Because it guarantees private investment without challenges", "D. Because it is primarily aimed at rural areas"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "Which of the following is highlighted as a key challenge for implementing the NIP projects?",
+        options: ["A. Lack of available land for construction", "B. Financing difficulties for Centre, States, and private sector participation", "C. Too many projects already completed", "D. Absence of any task force to monitor projects"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "What inference can be made about private sector participation in infrastructure investment?",
+        options: ["A. Private investment is expected to be effortless due to strong appetite", "B. The private sector has been hesitant in recent years, making the target ambitious", "C. Private companies will fund more than the Centre and States", "D. Private investment is irrelevant for economic growth"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "Why does the passage stress the importance of cooperation from States?",
+        options: ["A. Because States are responsible for all funding", "B. Because without cooperation, project implementation will face delays or failures", "C. Because the Centre cannot initiate projects without private companies", "D. Because the States have unlimited financial resources"],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "According to the passage, why is periodic review of the NIP necessary?",
+        options: [
+            "A. To ensure all projects are profitable for private investors only",
+            "B. To avoid the pipeline becoming a mere list of projects without progress",
+            "C. To replace State involvement with private funding",
+            "D. To increase debt levels in banks"
+        ],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "What is implied about banks’ role in the NIP financing?",
+        options: [
+            "A. Banks are fully confident and have no reservations about lending",
+            "B. Banks’ prior bad loans in infrastructure may make them cautious",
+            "C. Banks will fund only private sector projects",
+            "D. Banks are not involved in financing infrastructure"
+        ],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "What is the overall tone of the passage toward the NIP initiative?",
+        options: [
+            "A. Completely critical, emphasizing only obstacles",
+            "B. Supportive, while acknowledging challenges that need careful management",
+            "C. Neutral, without taking a position",
+            "D. Dismissive, suggesting the plan is unrealistic"
+        ],
+        answer: "B",
+        section: 3
+    },
+    {
+        passage: section3passage4,
+        type: "mcq",
+        question: "Which of the following best explains why implementing NIP projects is considered more difficult than identifying them?",
+        options: [
+            "A. Identifying projects requires less coordination and fewer resources than actual execution",
+            "B. Implementation depends solely on private sector funding",
+            "C. Identifying projects requires more time than execution",
+            "D. Execution does not involve financing or state cooperation"
+        ],
+        answer: "A",
+        section: 3
+    },
     // Section 3 - Dropdown Question (Email)
     {
         passage: section3PassageTemplate,  // use the template defined above
         type: "dropdown",                  // mark as dropdown type
         question: "Complete the email using the dropdowns below:", // the question prompt
         options: section3Dropdowns,        // use the dropdown options object
-        section: 3
+        section: 3,
+        answer: {
+            dropdown1: "have occurred",
+            dropdown2: "our",
+            dropdown3: "Once you write down the four-digit code for our alarm, memorize it.",
+            dropdown4: "Above all,"
+        }
     },
-
 
 ];
 
@@ -397,7 +759,6 @@ function drop(ev) {
     ev.target.appendChild(item);
 }
 
-
 // Render question
 function renderQuestion(index) {
     const sectionQuestions = questions
@@ -438,9 +799,11 @@ function renderQuestion(index) {
         const nextBtn = document.getElementById("next-btn");
         nextBtn.textContent = "Submit Section";
         nextBtn.onclick = () => {
+            const dropdownAnswers = {};
             document.querySelectorAll("#passage-container select").forEach(sel => {
-                answers[sel.name] = sel.value;
+                dropdownAnswers[sel.name] = sel.value;
             });
+            answers[q.globalIndex] = dropdownAnswers;
             showSectionComplete(sections[currentSectionIndex].name);
         };
 
@@ -663,7 +1026,6 @@ function submitExam() {
                     }
                 }
             }
-
             if (correct) {
                 totalCorrect++;
             } else {
@@ -672,6 +1034,28 @@ function submitExam() {
                     question: q.question,
                     yourAnswer: userAnswer || {},
                     correctAnswer: q.correctPlacement
+                });
+            }
+        }
+        else if (q.type === "dropdown" && typeof q.answer === "object") {
+            let correct = true;
+            for (let key in q.answer) {
+                if (
+                    !userAnswer ||
+                    !userAnswer[key] ||
+                    userAnswer[key].toString().trim().toLowerCase() !== q.answer[key].toString().trim().toLowerCase()
+                ) {
+                    correct = false;
+                    break;
+                }
+            }
+            if (correct) {
+                totalCorrect++;
+            } else {
+                mistakes.push({
+                    question: q.question,
+                    yourAnswer: userAnswer,
+                    correctAnswer: q.answer
                 });
             }
         }
@@ -724,7 +1108,7 @@ function showMistakes() {
     mistakesListReport.innerHTML = ""; // clear old report
 
     questions.forEach((q, i) => {
-        const userAnswer = answers[i] || "Not answered";
+        const userAnswer = answers[q.globalIndex] || "Not answered";
 
         // Determine correctness consistently with submitExam
         let isCorrect = false;
@@ -758,7 +1142,10 @@ function showMistakes() {
       </div>
       <p><b>Question:</b> ${q.question}</p>
       <p><b>Your Answer:</b> ${prettyAnswer(userAnswer)}</p>
-${q.type !== "er" ? `<p><b>Correct Answer:</b> ${q.type === "drag-drop" ? prettyAnswer(q.correctPlacement) : q.answer}</p>` : ""}
+${q.type !== "er" ? `<p><b>Correct Answer:</b> ${q.type === "drag-drop" ? prettyAnswer(q.correctPlacement) :
+                q.type === "dropdown" && typeof q.answer === "object" ? prettyAnswer(q.answer) :
+                    q.answer
+                }</p>` : ""}
       <p style="color:${isCorrect ? "green" : "red"}; font-weight:bold;">
         ${q.type === "er" ? "Extended Response (manual grading needed)" : (isCorrect ? "✔ Correct" : "❌ Mistake")}
       </p>
@@ -921,7 +1308,10 @@ function showDetailReport() {
             </div>
             <p><b>Question:</b> ${q.question}</p>
             <p><b>Your Answer:</b> ${prettyAnswer(userAnswer)}</p>
-${q.type !== "er" ? `<p><b>Correct Answer:</b> ${q.type === "drag-drop" ? prettyAnswer(q.correctPlacement) : q.answer}</p>` : ""}
+${q.type !== "er" ? `<p><b>Correct Answer:</b> ${q.type === "drag-drop" ? prettyAnswer(q.correctPlacement) :
+                q.type === "dropdown" && typeof q.answer === "object" ? prettyAnswer(q.answer) :
+                    q.answer
+                }</p>` : ""}
             <p style="color:${isCorrect ? "green" : "red"}; font-weight:bold;">
                 ${q.type === "er" ? "Extended Response (manual grading needed)"
                 : (isCorrect ? "✔ Correct" : "❌ Mistake")}
